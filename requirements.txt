@@ -5,7 +5,7 @@ python-multipart==0.0.20
 python-dotenv==1.0.1
 requests==2.32.5
 
-# === Machine Learning (CLIP Classification) ===
+# === Machine Learning / CLIP Classification ===
 torch==2.6.0+cpu
 torchvision==0.21.0+cpu
 transformers==4.57.0
@@ -15,7 +15,7 @@ numpy==1.26.4
 # === Face Verification ===
 facenet-pytorch==2.6.0
 
-# === OCR ===
+# === OCR (ID text extraction) ===
 easyocr==1.7.2
 opencv-python-headless==4.11.0.86
 scikit-image==0.25.2
