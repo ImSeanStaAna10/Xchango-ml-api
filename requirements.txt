@@ -6,8 +6,8 @@ python-dotenv==1.0.1
 requests==2.32.5
 
 # === Machine Learning / CLIP Classification ===
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
+torch==2.6.0+cpu
+torchvision==0.21.0+cpu
 transformers==4.57.0
 pillow==10.2.0
 numpy==1.26.4
