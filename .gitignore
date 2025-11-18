@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+.env.*   
+
+# VSCode folders
+.vscode/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Model cache (VERY IMPORTANT — para hindi mag-upload ng 1GB models)
+cache/
+core/*/cache/
