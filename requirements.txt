@@ -6,10 +6,10 @@ python-dotenv==1.0.1
 requests==2.32.5
 
 # === Machine Learning (CLIP Classification) ===
-torch==2.6.0
-torchvision==0.21.0
+torch==2.6.0+cpu
+torchvision==0.21.0+cpu
 transformers==4.57.0
-pillow==11.0.0        # was 9.5.0
+pillow==9.5.0
 numpy==1.26.4
 
 # === Face Verification ===
@@ -20,6 +20,6 @@ easyocr==1.7.2
 opencv-python-headless==4.11.0.86
 scikit-image==0.25.2
 scipy==1.15.3
-shapely==2.1.2
+Shapely==2.1.2
 pyclipper==1.3.0.post6
 python-bidi==0.6.7
