@@ -18,7 +18,7 @@ jobs:
           sudo apt-get update
 
       - name: Push to HuggingFace Space
-        uses: huggingface/huggingface-sync-action@v1
+        uses: huggingface/actions/hub-sync@v1
         with:
           repo: "SEANSAINTS/xchango-ml" # your space name
           token: ${{ secrets.XCHANGO_HF_DEPLOYMENT }}
