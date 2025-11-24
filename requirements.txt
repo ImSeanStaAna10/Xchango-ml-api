@@ -4,16 +4,11 @@ python-multipart==0.0.20
 python-dotenv==1.0.1
 requests==2.32.5
 
-# PyTorch ecosystem (Python 3.13 compatible)
 torch==2.5.1
 torchvision==0.24.1
-
-# Transformers + embeddings
 transformers==4.57.0
 
-# Utils
 numpy==1.26.4
 pillow==10.2.0
 
-# Face recognition
 facenet-pytorch==2.6.0
