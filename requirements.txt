@@ -4,8 +4,11 @@ python-multipart==0.0.20
 python-dotenv==1.0.1
 requests==2.32.5
 
-torch==2.2.2
-torchvision==0.17.2
+# --- PyTorch CPU-Only (much smaller & perfect for Render free tier) ---
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 transformers==4.57.0
 
 numpy==1.26.4
