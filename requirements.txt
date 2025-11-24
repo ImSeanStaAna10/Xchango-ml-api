@@ -9,6 +9,6 @@ torchvision==0.24.1
 transformers==4.57.0
 
 numpy==1.26.4
-pillow==10.2.0
+pillow==10.4.0
 
 facenet-pytorch==2.6.0
