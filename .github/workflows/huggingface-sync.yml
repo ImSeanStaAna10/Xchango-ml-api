@@ -13,8 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Push to HuggingFace Space
-        uses: huggingface/hub-action@v1
+      - name: Sync to HuggingFace Space
+        uses: huggingface/huggingface-sync-action@v1
         with:
-          repo-token: ${{ secrets.XCHANGO_HF_DEPLOYMENT }}
-          repo-id: SEANSAINTS/Xchango-ml
+          repo: "SEANSAINTS/Xchango-ml"
+          token: ${{ secrets.XCHANGO_HF_DEPLOYMENT }}
+          space_sdk: docker
+          commit_message: "Auto-sync from GitHub Actions"
