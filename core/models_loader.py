@@ -1,6 +1,5 @@
 from transformers import CLIPProcessor, CLIPModel
 from facenet_pytorch import InceptionResnetV1, MTCNN
-import easyocr
 import torch
 import os
 from categories import CATEGORY_PROMPTS
@@ -40,14 +39,8 @@ facenet_model = InceptionResnetV1(pretrained="vggface2").eval().to(device)
 log.info("✅ FaceNet loaded successfully!")
 
 # =========================================================
-# EASYOCR (Optional – can be disabled via .env)
+# OCR DISABLED
 # =========================================================
-ENABLE_OCR = os.getenv("ENABLE_OCR", "true").lower() == "true"
-
+ENABLE_OCR = False
 ocr_reader = None
-if ENABLE_OCR:
-    log.info("Loading EasyOCR model (CPU-based)...")
-    ocr_reader = easyocr.Reader(['en'], gpu=False)
-    log.info("✅ EasyOCR ready!")
-else:
-    log.warning("🚫 OCR disabled via .env (ENABLE_OCR=false)")
+log.warning("🚫 OCR disabled (EasyOCR removed from dependencies)")
