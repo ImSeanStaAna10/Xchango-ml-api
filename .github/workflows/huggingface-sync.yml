@@ -10,12 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Upload to Hugging Face Space
+      - name: Push to HuggingFace Space
         uses: huggingface/hub-action@v1
         with:
           repo-token: ${{ secrets.XCHANGO_HF_DEPLOYMENT }}
-          repo-id: SEANSAINTS/xchango-ml
-          revision: main
+          repo-id: SEANSAINTS/Xchango-ml
