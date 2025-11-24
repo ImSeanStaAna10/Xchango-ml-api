@@ -4,9 +4,9 @@ python-multipart==0.0.20
 python-dotenv==1.0.1
 requests==2.32.5
 
-# Torch CPU version (compatible with Python 3.10)
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
+# Torch CPU supported on Python 3.10 + Render Free Tier
+torch==2.0.0+cpu
+torchvision==0.15.1+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 
 transformers==4.37.0
