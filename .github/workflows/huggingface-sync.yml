@@ -13,8 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Sync repository to Hugging Face Space
-        uses: huggingface/spaces-sync@v0.2
+      - name: Upload to Hugging Face Space
+        uses: huggingface/hub-action@v1
         with:
-          hf_token: ${{ secrets.XCHANGO_HF_DEPLOYMENT }}
-          space_id: "SEANSAINTS/xchango-ml"
+          repo-token: ${{ secrets.XCHANGO_HF_DEPLOYMENT }}
+          repo-id: SEANSAINTS/xchango-ml
+          revision: main
